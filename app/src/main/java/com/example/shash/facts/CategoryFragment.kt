@@ -8,8 +8,6 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.shash.facts.databinding.FragmentCategoryBinding
 
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
 class CategoryFragment : Fragment() {
 
@@ -21,7 +19,10 @@ class CategoryFragment : Fragment() {
             inflater,
             R.layout.fragment_category, container, false
         )
-
+        binding.sportsButton.setOnClickListener{view: View ->
+        view.findNavController().navigate(CategoryFragmentDirections.actionCategoryFragmentToSportsFragment())}
+        binding.scienceButton.setOnClickListener{view: View ->
+        view.findNavController().navigate(CategoryFragmentDirections.actionCategoryFragmentToScienceFragment())}
         setHasOptionsMenu(true)
         return binding.root
     }
@@ -35,5 +36,4 @@ class CategoryFragment : Fragment() {
         return NavigationUI.onNavDestinationSelected(item!!, view!!.findNavController())
                 || super.onOptionsItemSelected(item)
     }
-
 }

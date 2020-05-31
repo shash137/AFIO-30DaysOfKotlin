@@ -11,17 +11,23 @@
         android:label="fragment_category"
         tools:layout="@layout/fragment_category">
         <action
-            android:id="@+id/action_categoryFragment_to_aboutFragment4"
-            app:destination="@id/aboutFragment4" />
+            android:id="@+id/action_categoryFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
         <action
             android:id="@+id/action_categoryFragment_to_sportsFragment"
             app:destination="@id/sportsFragment" />
         <action
             android:id="@+id/action_categoryFragment_to_scienceFragment"
             app:destination="@id/scienceFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_technologyFragment"
+            app:destination="@id/technologyFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_musicFragment"
+            app:destination="@id/musicFragment" />
     </fragment>
     <fragment
-        android:id="@+id/aboutFragment4"
+        android:id="@+id/aboutFragment"
         android:name="com.example.shash.facts.AboutFragment"
         android:label="AboutFragment" />
     <fragment
@@ -32,4 +38,12 @@
         android:id="@+id/sportsFragment"
         android:name="com.example.shash.facts.SportsFragment"
         android:label="SportsFragment" />
+    <fragment
+        android:id="@+id/musicFragment"
+        android:name="com.example.shash.facts.MusicFragment"
+        android:label="MusicFragment" />
+    <fragment
+        android:id="@+id/technologyFragment"
+        android:name="com.example.shash.facts.TechnologyFragment"
+        android:label="TechnologyFragment" />
 </navigation>
