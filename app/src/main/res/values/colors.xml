@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--Day Theme colors-->
-    <color name="colorPrimaryDay">#6200EE</color>
-    <color name="colorPrimaryDarkDay">#3700B3</color>
+    <color name="colorPrimaryDay">#74B9FF</color>
+    <color name="colorPrimaryDarkDay">#0A79DF</color>
     <color name="colorAccentDay">#03DAC5</color>
     <color name="textDay">#000</color>
+    <color name="white">#FFF</color>
     <!--Night Theme colors->
     <color name="colorPrimaryNight">#6200EE</color>
     <color name="colorPrimaryDarkNight">#3700B3</color>
     <color name="colorAccentNight">#03DAC5</color>
-    <color name="textNight">#000</color>-->
+    <color name="textNight">#000</color>
+    <color name="backgroundNight">#333945</color>-->
 </resources>

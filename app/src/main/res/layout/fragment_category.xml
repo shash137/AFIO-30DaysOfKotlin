@@ -3,11 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".CategoryFragment">
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/categoryConstraint"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/white">
 
         <ImageView
             android:id="@+id/imageView"
@@ -15,6 +18,7 @@
             android:layout_height="300dp"
             android:layout_marginTop="55dp"
             android:src="@drawable/screenshot"
+            android:contentDescription="@string/app_logo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
@@ -25,8 +29,11 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="116dp"
-            android:text="Sports"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/sports"
+            android:textColor="#FFF"
+            android:textSize="20sp"
             app:layout_constraintEnd_toStartOf="@+id/musicButton"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -36,9 +43,12 @@
             android:id="@+id/musicButton"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="116dp"
+            android:layout_marginTop="56dp"
             android:layout_marginEnd="16dp"
-            android:text="Music"
+            android:background="@drawable/custom_button"
+            android:text="@string/music"
+            android:textColor="#FFF"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/sportsButton"
@@ -48,9 +58,12 @@
             android:id="@+id/technologyButton"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
-            android:layout_marginEnd="24dp"
-            android:text="Technology"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/technology"
+            android:background="@drawable/custom_button"
+            android:textColor="#FFF"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/scienceButton"
@@ -61,11 +74,15 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="28dp"
-            android:text="Science"
+            android:layout_marginTop="56dp"
+            android:text="@string/science"
+            android:background="@drawable/custom_button"
+            android:textColor="#FFF"
+            android:textSize="20sp"
             app:layout_constraintEnd_toStartOf="@+id/technologyButton"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/sportsButton" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
 </layout>

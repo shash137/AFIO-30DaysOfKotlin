@@ -3,9 +3,12 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimaryDay</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDarkDay</item>
+        <item name="colorPrimary">@color/colorPrimaryDarkDay</item>
+        <item name="colorPrimaryDark">#0969C3</item>
         <item name="colorAccent">@color/colorAccentDay</item>
     </style>
-
+    <style name="CustomButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/custom_button</item>
+        <item name="android:textColor">#FFF</item>
+    </style>
 </resources>
