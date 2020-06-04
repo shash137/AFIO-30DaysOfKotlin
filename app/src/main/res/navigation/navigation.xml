@@ -37,7 +37,14 @@
     <fragment
         android:id="@+id/sportsFragment"
         android:name="com.example.shash.facts.SportsFragment"
-        android:label="SportsFragment" />
+        android:label="SportsFragment" >
+        <action
+            android:id="@+id/action_sportsFragment_to_footballFragment"
+            app:destination="@id/footballFragment" />
+        <action
+            android:id="@+id/action_sportsFragment_to_cricketFragment"
+            app:destination="@id/cricketFragment" />
+    </fragment>
     <fragment
         android:id="@+id/musicFragment"
         android:name="com.example.shash.facts.MusicFragment"
@@ -46,4 +53,13 @@
         android:id="@+id/technologyFragment"
         android:name="com.example.shash.facts.TechnologyFragment"
         android:label="TechnologyFragment" />
+    <fragment
+        android:id="@+id/footballFragment"
+        android:name="com.example.shash.facts.FootballFragment"
+        android:label="FootballFragment" />
+    <fragment
+        android:id="@+id/cricketFragment"
+        android:name="com.example.shash.facts.CricketFragment"
+        android:label="fragment_cricket"
+        tools:layout="@layout/fragment_cricket" />
 </navigation>

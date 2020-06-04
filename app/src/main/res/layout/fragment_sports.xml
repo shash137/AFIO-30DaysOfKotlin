@@ -7,42 +7,39 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/categoryConstraint"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:layout_marginTop="55dp"
-            android:src="@drawable/screenshot"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:background="@color/white">
 
         <Button
-            android:id="@+id/FootballButton"
+            android:id="@+id/footballButton"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="92dp"
-
-            android:text="Football"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/football"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/cricketButton"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/cricketButton"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="92dp"
-
-            android:text="Cricket"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/cricket"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/FootballButton"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>

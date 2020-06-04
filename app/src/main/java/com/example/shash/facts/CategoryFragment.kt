@@ -21,8 +21,12 @@ class CategoryFragment : Fragment() {
         )
         binding.sportsButton.setOnClickListener{view: View ->
         view.findNavController().navigate(CategoryFragmentDirections.actionCategoryFragmentToSportsFragment())}
+        binding.musicButton.setOnClickListener{view: View ->
+            view.findNavController().navigate(CategoryFragmentDirections.actionCategoryFragmentToMusicFragment())}
         binding.scienceButton.setOnClickListener{view: View ->
         view.findNavController().navigate(CategoryFragmentDirections.actionCategoryFragmentToScienceFragment())}
+        binding.technologyButton.setOnClickListener{view: View ->
+            view.findNavController().navigate(CategoryFragmentDirections.actionCategoryFragmentToTechnologyFragment())}
         setHasOptionsMenu(true)
         return binding.root
     }
