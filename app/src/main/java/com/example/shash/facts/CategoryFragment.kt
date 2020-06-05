@@ -2,6 +2,7 @@ package com.example.shash.facts
 
 import android.os.Bundle
 import android.view.*
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
@@ -28,6 +29,7 @@ class CategoryFragment : Fragment() {
         binding.technologyButton.setOnClickListener{view: View ->
             view.findNavController().navigate(CategoryFragmentDirections.actionCategoryFragmentToTechnologyFragment())}
         setHasOptionsMenu(true)
+        (activity as AppCompatActivity).supportActionBar?.title = "Facts"
         return binding.root
     }
 
