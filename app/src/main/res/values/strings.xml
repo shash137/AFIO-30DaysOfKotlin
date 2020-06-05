@@ -18,5 +18,22 @@
         Lorem Ipsum has been the industrys standard dummy text
         ever since the 1500s, when an unknown printer took a galley of type and scrambled
         it to make a type specimen book.</string>
-    <string name="quote">This is dummy quote!!</string>
+    <string name="fact">This is dummy fact!!</string>
+    <string-array name="music_facts">
+        <item>The global music industry was worth $19.1 billion as of 2018.</item>
+        <item>Despacito by Luis Fonsi and Daddy Yankee have 6.6 billion views on YouTube as of February 2020.</item>
+        <item>Shakira is the first person to have more than 100 million likes on Facebook.</item>
+        <item>Katy Perry is the first person to have more than 100 million followers on Twitter.</item>
+        <item>Eminem’s Rap God has the most words in a song, at 1,560 words.</item>
+        <item>The world’s largest performing rock band included 953 musicians.</item>
+        <item>The record for the world’s longest marathon team drumming is 3 days, 8 hours, and 2 minutes.</item>
+        <item>Daddy Yankee is the first Latin artist to become Number One on Spotify.</item>
+        <item>The song Despacito holds seven world records of its own.</item>
+        <item>70 different pieces of wood make a violin.</item>
+        <item>The veena is a beautiful instrument that was first made in India.</item>
+        <item>The tabla, is a musical instrument that was made first in India.</item>
+        <item>Listening to Music Enhances Physical Performance.</item>
+        <item>"Jingle Bells" Was Originally a Thanksgiving Song.</item>
+        <item>Music helps plants grow faster.</item>
+    </string-array>
 </resources>
