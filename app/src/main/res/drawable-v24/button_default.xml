@@ -9,10 +9,6 @@
         android:startColor="@color/colorPrimaryDay"
         android:centerColor="@color/colorPrimaryDarkDay"
         android:endColor="@color/colorPrimaryDay"/>
-<!--    <gradient-->
-<!--        android:angle="135"-->
-<!--        android:startColor="@color/colorPrimaryDay"-->
-<!--        android:endColor="@color/colorPrimaryDarkDay"/>-->
     <padding
         android:top="2dp"
         android:left="6dp"

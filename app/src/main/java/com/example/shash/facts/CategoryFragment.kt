@@ -1,5 +1,6 @@
 package com.example.shash.facts
 
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.*
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.shash.facts.databinding.FragmentCategoryBinding
+import kotlinx.android.synthetic.main.fragment_category.*
 
 
 class CategoryFragment : Fragment() {

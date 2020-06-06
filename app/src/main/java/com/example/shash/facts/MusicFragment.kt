@@ -48,7 +48,7 @@ class MusicFragment : Fragment() {
 
         binding.musicFactButton.setOnClickListener {
             randomizeFact()
-            binding.factsss = this
+            binding.factss = this
         }
         (activity as AppCompatActivity).supportActionBar?.title = "Music"
         return binding.root
