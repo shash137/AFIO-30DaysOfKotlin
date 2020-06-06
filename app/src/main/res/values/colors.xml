@@ -6,6 +6,9 @@
     <color name="colorAccentDay">#03DAC5</color>
     <color name="textDay">#000</color>
     <color name="white">#FFF</color>
+
+    <color name="black">#000</color>
+    <color name="progressBar">#A2A8F5</color>
     <!--Night Theme colors->
     <color name="colorPrimaryNight">#6200EE</color>
     <color name="colorPrimaryDarkNight">#3700B3</color>
