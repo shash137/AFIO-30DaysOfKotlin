@@ -21,10 +21,13 @@ class SportsFragment : Fragment() {
         val binding = DataBindingUtil.inflate<FragmentSportsBinding>(
             inflater,
             R.layout.fragment_sports, container, false)
+        binding.footballButton.isEnabled = false
+        binding.footballButton.setBackgroundResource(R.drawable.button_disable)
+        
         binding.cricketButton.setOnClickListener { view: View->
             view.findNavController().navigate(SportsFragmentDirections.actionSportsFragmentToCricketFragment())}
-        binding.footballButton.setOnClickListener { view: View ->
-            view.findNavController().navigate(SportsFragmentDirections.actionSportsFragmentToFootballFragment())}
+//        binding.footballButton.setOnClickListener { view: View ->
+//            view.findNavController().navigate(SportsFragmentDirections.actionSportsFragmentToFootballFragment())}
 
         (activity as AppCompatActivity).supportActionBar?.title = "Sports"
         return binding.root

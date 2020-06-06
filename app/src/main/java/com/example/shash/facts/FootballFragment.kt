@@ -29,6 +29,8 @@ class FootballFragment : Fragment() {
         Facts(text = " "),
         Facts(text = " "),
         Facts(text = " "),
+        Facts(text = " "),
+        Facts(text = " "),
         Facts(text = " ")
     )
     lateinit var currentFacts: Facts
