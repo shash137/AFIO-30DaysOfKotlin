@@ -30,15 +30,15 @@ class CategoryFragment : Fragment() {
         view.findNavController().navigate(CategoryFragmentDirections.actionCategoryFragmentToScienceFragment())}
         binding.technologyButton.setOnClickListener{view: View ->
             view.findNavController().navigate(CategoryFragmentDirections.actionCategoryFragmentToTechnologyFragment())}
-        setHasOptionsMenu(true)
+        //setHasOptionsMenu(true)
         (activity as AppCompatActivity).supportActionBar?.title = "Facts"
         return binding.root
     }
-
-    override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?) {
-        super.onCreateOptionsMenu(menu, inflater)
-        inflater?.inflate(R.menu.menu, menu)
-    }
+                //Options Menu will be activated later with some new menu
+//    override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?) {
+//        super.onCreateOptionsMenu(menu, inflater)
+//        inflater?.inflate(R.menu.menu, menu)
+//    }
 
     override fun onOptionsItemSelected(item: MenuItem?): Boolean {
         return NavigationUI.onNavDestinationSelected(item!!, view!!.findNavController())

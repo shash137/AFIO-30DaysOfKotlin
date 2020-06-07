@@ -10,7 +10,7 @@
     <string name="technology">Technology</string>
     <string name="cricket">Cricket</string>
     <string name="football">Football</string>
-
+    <string name="aboutInfo">This application is Designed by Shashank Shukla.\n This project is under development, some more feature are yet to come.</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
