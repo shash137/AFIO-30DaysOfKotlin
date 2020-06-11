@@ -6,7 +6,7 @@
     <data>
         <variable
             name="factss"
-            type="com.example.shash.facts.CricketFragment" />
+            type="com.example.shash.facts.cricket.CricketFragment" />
     </data>
     <ScrollView
         android:layout_width="match_parent"

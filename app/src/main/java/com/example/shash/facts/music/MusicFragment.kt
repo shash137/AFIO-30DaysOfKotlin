@@ -1,4 +1,4 @@
-package com.example.shash.facts
+package com.example.shash.facts.music
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.example.shash.facts.R
 import com.example.shash.facts.databinding.FragmentMusicBinding
 
 
@@ -43,7 +44,8 @@ class MusicFragment : Fragment() {
     ): View? {
 
         val binding = DataBindingUtil.inflate<FragmentMusicBinding>(
-            inflater, R.layout.fragment_music, container, false
+            inflater,
+            R.layout.fragment_music, container, false
         )
 
         binding.musicFactButton.setOnClickListener {

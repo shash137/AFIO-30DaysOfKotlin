@@ -1,4 +1,4 @@
-package com.example.shash.facts
+package com.example.shash.facts.cricket
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.example.shash.facts.R
 import com.example.shash.facts.databinding.FragmentCricketBinding
-import com.example.shash.facts.databinding.FragmentScienceBinding
 
 
 class CricketFragment : Fragment() {
@@ -43,7 +43,8 @@ class CricketFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentCricketBinding>(
-            inflater, R.layout.fragment_cricket, container, false
+            inflater,
+            R.layout.fragment_cricket, container, false
         )
         binding.nextButton.setOnClickListener {
             randomizeFact()

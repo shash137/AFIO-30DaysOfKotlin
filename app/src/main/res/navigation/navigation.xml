@@ -28,11 +28,11 @@
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="com.example.shash.facts.AboutFragment"
+        android:name="com.example.shash.facts.about.AboutFragment"
         android:label="AboutFragment" />
     <fragment
         android:id="@+id/scienceFragment"
-        android:name="com.example.shash.facts.ScienceFragment"
+        android:name="com.example.shash.facts.science.ScienceFragment"
         android:label="ScienceFragment" />
     <fragment
         android:id="@+id/sportsFragment"
@@ -47,19 +47,19 @@
     </fragment>
     <fragment
         android:id="@+id/musicFragment"
-        android:name="com.example.shash.facts.MusicFragment"
+        android:name="com.example.shash.facts.music.MusicFragment"
         android:label="MusicFragment" />
     <fragment
         android:id="@+id/technologyFragment"
-        android:name="com.example.shash.facts.TechnologyFragment"
+        android:name="com.example.shash.facts.technology.TechnologyFragment"
         android:label="TechnologyFragment" />
     <fragment
         android:id="@+id/footballFragment"
-        android:name="com.example.shash.facts.FootballFragment"
+        android:name="com.example.shash.facts.football.FootballFragment"
         android:label="FootballFragment" />
     <fragment
         android:id="@+id/cricketFragment"
-        android:name="com.example.shash.facts.CricketFragment"
+        android:name="com.example.shash.facts.cricket.CricketFragment"
         android:label="fragment_cricket"
         tools:layout="@layout/fragment_cricket" />
 </navigation>

@@ -6,7 +6,7 @@
     <data>
         <variable
             name="factss"
-            type="com.example.shash.facts.ScienceFragment" />
+            type="com.example.shash.facts.science.ScienceFragment" />
     </data>
     <ScrollView
         android:layout_width="match_parent"

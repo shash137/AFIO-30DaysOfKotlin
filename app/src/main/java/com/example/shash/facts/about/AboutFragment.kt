@@ -1,4 +1,4 @@
-package com.example.shash.facts
+package com.example.shash.facts.about
 
 import android.content.Intent
 import android.net.Uri
@@ -9,8 +9,9 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import com.example.shash.facts.BuildConfig
+import com.example.shash.facts.R
 import com.example.shash.facts.databinding.FragmentAboutBinding
-import kotlinx.android.synthetic.main.fragment_about.view.*
 
 
 class AboutFragment : Fragment() {
@@ -20,7 +21,8 @@ class AboutFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentAboutBinding>(
-            inflater, R.layout.fragment_about, container, false
+            inflater,
+            R.layout.fragment_about, container, false
         )
         binding.githubIcon.setOnClickListener{
             iconPressed()

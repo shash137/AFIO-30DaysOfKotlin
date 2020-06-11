@@ -1,4 +1,4 @@
-package com.example.shash.facts
+package com.example.shash.facts.technology
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.example.shash.facts.R
 import com.example.shash.facts.databinding.FragmentTechnologyBinding
 
 
@@ -41,7 +42,8 @@ class TechnologyFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentTechnologyBinding>(
-            inflater, R.layout.fragment_technology, container, false
+            inflater,
+            R.layout.fragment_technology, container, false
         )
         binding.nextButton.setOnClickListener {
             randomizeFact()
