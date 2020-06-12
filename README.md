@@ -12,7 +12,6 @@ Currently this app has four categories on which it can tell you a fact, thses ar
 
 * Day/Night Theme
 * Add to Favourites
-* Search option
 * Swipe cards for better UI
 * Quick action,  idrectly to different categories.
 * Some more categories.
