@@ -27,7 +27,6 @@ class TechnologyFragment : Fragment() {
         Facts(text = "The first known calculator, the Abacus, was invented in Babylonia in 2400 BC."),
         Facts(text = "Inside the Original Macintosh computer case are 47 signatures for each member of the Macintosh division of Apple in 1982."),
         Facts(text = "Stewardesses’ is the longest word you can type with one hand."),
-        Facts(text = "Email is older than the World Wide Web."),
         Facts(text = "We spend around 10 years watching TV."),
         Facts(text = "The only state that can be typed on the same line of a QWERTY keyboard is Alaska. "),
         Facts(text = "China has banned YouTube, Facebook, Gmail, Twitter, Instagram, Dropbox and Skype from public use."),

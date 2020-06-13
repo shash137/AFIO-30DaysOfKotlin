@@ -18,7 +18,6 @@ class FootballFragment : Fragment() {
 
     private val facts: MutableList<Facts> = mutableListOf(
         Facts(text = "Football was invented in China nearly 476 B.C."),
-        Facts(text = "Football is the most watched and most played sport on earth."),
         Facts(text = "Only Canadians and Americans call football as Soccer.\n"),
         Facts(text = "During every game, Football players run an average of 9.65 km."),
         Facts(text = "The first game of Basketball was played with a soccer ball."),

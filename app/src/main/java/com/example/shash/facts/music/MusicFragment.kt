@@ -27,7 +27,6 @@ class MusicFragment : Fragment() {
         Facts(text = "Daddy Yankee is the first Latin artist to become Number One on Spotify."),
         Facts(text = "The song Despacito holds seven world records of its own."),
         Facts(text = "70 different pieces of wood make a violin."),
-        Facts(text = "The veena is a beautiful instrument that was first made in India."),
         Facts(text = "The tabla, is a musical instrument that was made first in India."),
         Facts(text = "Listening to Music Enhances Physical Performance."),
         Facts(text = "\"Jingle Bells\" Was Originally a Thanksgiving Song."),

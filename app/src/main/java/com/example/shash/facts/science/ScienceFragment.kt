@@ -28,8 +28,7 @@ class ScienceFragment : Fragment() {
         Facts(text = "Babies have around 300 bones at birth."),
         Facts(text = "There is enough DNA in the average person’s body to stretch from the sun to Pluto and back — 17 times."),
         Facts(text = "In an entire lifetime, the average person walks the equivalent of five times around the world."),
-        Facts(text = "Grasshoppers have ears in their bellies."),
-        Facts(text = "Octopuses have three hearts, nine brains, and blue blood.")
+        Facts(text = "Grasshoppers have ears in their bellies.")
     )
 
     lateinit var currentFacts: Facts
