@@ -3,11 +3,8 @@ package com.example.shash.facts.cricket
 import androidx.lifecycle.ViewModel
 
 class CricketViewModel: ViewModel() {
-//    data class Facts(
-//        val text: String
-//    )
+
     var text = ""
-//    lateinit var currentFacts: CricketFragment.Facts
     private lateinit var facts: MutableList<String>
      fun resetList() {
          facts  = mutableListOf(
