@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".CategoryFragment">
-    <data>
-        <variable
-            name="factss"
-            type="com.example.shash.facts.football.FootballFragment" />
-    </data>
+<!--    <data>-->
+<!--        <variable-->
+<!--            name="factss"-->
+<!--            type="com.example.shash.facts.football.FootballFragment" />-->
+<!--    </data>-->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -25,7 +25,7 @@
                 android:layout_width="330dp"
                 android:layout_height="250dp"
                 android:layout_marginTop="130dp"
-                android:text="@{factss.currentFacts.text}"
+                android:text="@string/football_fact"
                 android:gravity="center"
                 android:textColor="@color/black"
                 android:textAlignment="center"

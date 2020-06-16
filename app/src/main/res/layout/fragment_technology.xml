@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".CategoryFragment">
 
-    <data>
-        <variable
-            name="factss"
-            type="com.example.shash.facts.technology.TechnologyFragment" />
-    </data>
+<!--    <data>-->
+<!--        <variable-->
+<!--            name="factss"-->
+<!--            type="com.example.shash.facts.technology.TechnologyFragment" />-->
+<!--    </data>-->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -26,8 +26,7 @@
                 android:layout_width="330dp"
                 android:layout_height="250dp"
                 android:layout_marginTop="130dp"
-                android:hint="@string/fact"
-                android:text="@{factss.currentFacts.text}"
+                android:text="@string/technology_fact"
                 android:textColor="@color/black"
                 android:gravity="center"
                 android:textStyle="bold"
