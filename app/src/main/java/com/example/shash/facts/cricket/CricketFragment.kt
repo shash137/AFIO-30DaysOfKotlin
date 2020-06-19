@@ -7,7 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.fragment.NavHostFragment
 import com.example.shash.facts.R
 import com.example.shash.facts.databinding.FragmentCricketBinding
 
@@ -45,15 +47,23 @@ class CricketFragment : Fragment() {
             R.layout.fragment_cricket, container, false
         )
         viewModel = ViewModelProviders.of(this).get(CricketViewModel::class.java)
+        //set text to text view
+        viewModel.text.observe(viewLifecycleOwner, Observer { nextFact ->
+            binding.cricketFact.text = nextFact
+        })
+        //when facts list finished switch to category fragment
+        viewModel.eventFactsFinish.observe(viewLifecycleOwner, Observer<Boolean> { hasFinish ->
+            if (hasFinish) factsFinish()
+        })
         binding.nextButton.setOnClickListener {
-            viewModel.resetList()
-            setFact()
+            viewModel.nextFact()
         }
         (activity as AppCompatActivity).supportActionBar?.title = "Cricket"
         return binding.root
     }
 
-    fun setFact() {
-        binding.cricketFact.text = viewModel.text
+    private fun factsFinish() {
+        val action = CricketFragmentDirections.actionCricketFragmentToCategoryFragment()
+        NavHostFragment.findNavController(this).navigate(action)
     }
 }

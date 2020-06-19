@@ -33,7 +33,11 @@
     <fragment
         android:id="@+id/scienceFragment"
         android:name="com.example.shash.facts.science.ScienceFragment"
-        android:label="ScienceFragment" />
+        android:label="ScienceFragment" >
+        <action
+            android:id="@+id/action_scienceFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
     <fragment
         android:id="@+id/sportsFragment"
         android:name="com.example.shash.facts.SportsFragment"
@@ -48,18 +52,34 @@
     <fragment
         android:id="@+id/musicFragment"
         android:name="com.example.shash.facts.music.MusicFragment"
-        android:label="MusicFragment" />
+        android:label="MusicFragment" >
+        <action
+            android:id="@+id/action_musicFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
     <fragment
         android:id="@+id/technologyFragment"
         android:name="com.example.shash.facts.technology.TechnologyFragment"
-        android:label="TechnologyFragment" />
+        android:label="TechnologyFragment" >
+        <action
+            android:id="@+id/action_technologyFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
     <fragment
         android:id="@+id/footballFragment"
         android:name="com.example.shash.facts.football.FootballFragment"
-        android:label="FootballFragment" />
+        android:label="FootballFragment" >
+        <action
+            android:id="@+id/action_footballFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
     <fragment
         android:id="@+id/cricketFragment"
         android:name="com.example.shash.facts.cricket.CricketFragment"
         android:label="fragment_cricket"
-        tools:layout="@layout/fragment_cricket" />
+        tools:layout="@layout/fragment_cricket" >
+        <action
+            android:id="@+id/action_cricketFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
 </navigation>
